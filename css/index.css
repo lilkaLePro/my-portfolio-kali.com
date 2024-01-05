@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,400;1,500;1,700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* look at colors in tailwind css */
+@layer base {
+    :root {
+        /* LE THEME EST VERT */
+        --text-base : #111802;
+        --sous-text : #2f4306;
+        --sous-text-inv : #ebfacc;
+        --bg-remp : #b3ff17;
+        --color-button : #243403;
+        --button-hover : #374f05;
+        --button-sous : #ef4444;
+    }
+    .theme-dark{
+        --text-base : #ebfacc;
+
+    }
+}
+
+*{
+    font-family : Ubuntu
+}
+
+.navlink{@apply font-extrabold text-center border-b-0 transition-all}
+        /* a propos de moi page */
+.projet {@apply max-w-2xl h-80}
+.active { @apply text-light-green border-b-4 }
+
+
+.Pprofil {animation : 40s disc linear infinite ;}
+@keyframes disc {
+from {rotate : 0deg ;}to{rotate : 360deg;}}
