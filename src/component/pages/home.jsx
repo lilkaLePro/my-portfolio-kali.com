@@ -1,7 +1,10 @@
 import Card from "../comp/Card.jsx"
 import Button from "../comp/button.jsx"
-
-
+import { IoIosCall } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
+import { FaCode } from "react-icons/fa6";
 
 export default function Home(){
 
@@ -17,7 +20,8 @@ export default function Home(){
         Salut a vous, moi c est <span className="font-bold">Kaly Diallo</span> é passionné du code é et du graphisme é surtout animé par la creativité
         , basé à Dakar, Sénégal 
         </p>
-        <span className="text-sous-text w-full mt-10 flex flex-row gap-2 max-xm:m-0 max-lg:flex-col font-semibold">Voulez vous avoir une interface comme celle ci ? <Button value={"me contacter"}/></span>
+        <span className="text-sous-text w-full mt-10 flex flex-row gap-2 max-xm:m-0 max-lg:flex-col font-semibold">Voulez vous avoir une interface comme celle ci ? 
+        <Button  iconf={<IoIosCall/>} value={"me contacter"}/>  </span>
 
       {/* <div className="absolute border w-80 h-80 rounded-full bg-ligh-yel "> </div> */}
       {/* <div className="absolute border w-80 h-80 rounded-full bg-light-green top-20 "> </div> */}
@@ -31,8 +35,8 @@ export default function Home(){
           <img src="/img/PP-kali.jpg"className="w-full h-full" alt="photo de profile" />
           </div>
         <div className="flex gap-10">
-          <div><div className="w-14 h-14  rounded-full overflow-hidden border"><img src="" alt="icone github" /></div> github</div>
-          <div><div className="w-14 h-14  rounded-full overflow-hidden border"><img src="" alt="icone linkedin" /></div> linkedin</div>
+          <div><div className="w-9 h-9  rounded-full overflow-hidden"><FaGithub className="w-full h-full" /> </div> github</div>
+          <div><div className="w-9 h-9 overflow-hidden"><FaLinkedin className="w-full h-full"/></div> linkedin</div>
       </div>
       </div>
       
@@ -41,17 +45,17 @@ export default function Home(){
       <div className="w-full mb-20 flex flex-col  items-center  justify-center py-5 px-40 ">
         <h1 className="text-light-green text-xd font-extrabold text-center m-5 ">Mes competences</h1>
       <div className="w-full grid gap-10 grid-cols-3 grid-flow-col-32  max-md:grid max-md:grid-cols-2 max-sm:grid-cols-1 justify-center pt-10 ">
-        <Card  title={"front-end"} list={
+        <Card src={<FaCode className="w-full h-full text-light-green " />} title={"front-end"} list={
           front.map((items , index) =>(
             <li key={index}>{items.name}</li>
            ))
         }/>
-        <Card title={"soft-skills"} list={
+        <Card src={<GiSkills className="w-full h-full text-light-green"/>} title={"soft-skills"} list={
           softSkils.map((items , index) =>(
             <li key={index}>{items.name} </li>
            ))
         } />
-        <Card title={"back-end"} list={
+        <Card src={<FaCode className="w-full h-full text-light-green " />} title={"back-end"} list={
           back.map((items , index) =>(
             <li key={index}>{items.name} </li>
            ))

@@ -25,7 +25,7 @@
     font-family : Ubuntu
 }
 
-.navlink{@apply font-extrabold text-center border-b-0 transition-all}
+.navlink{@apply flex flex-row justify-center items-center gap-2 font-extrabold text-center border-b-0 transition-all}
         /* a propos de moi page */
 .projet {@apply max-w-2xl h-80}
 .active { @apply text-light-green border-b-4 }
