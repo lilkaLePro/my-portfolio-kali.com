@@ -10,7 +10,7 @@
         --text-base : #111802;
         --sous-text : #2f4306;
         --sous-text-inv : #ebfacc;
-        --bg-remp : #b3ff17;
+        --bg-remp : #613DC9 ;
         --color-button : #243403;
         --button-hover : #374f05;
         --button-sous : #ef4444;
@@ -22,7 +22,8 @@
 }
 
 *{
-    font-family : Ubuntu
+    font-family : Ubuntu;
+    background : darkWhite ;
 }
 
 .navlink{@apply flex flex-row justify-center items-center gap-2 font-extrabold text-center border-b-0 transition-all}
@@ -34,3 +35,10 @@
 .Pprofil {animation : 40s disc linear infinite ;}
 @keyframes disc {
 from {rotate : 0deg ;}to{rotate : 360deg;}}
+
+@media (max-width: 640px) {
+    header {@apply h-14 justify-between }
+    .navEl {@apply w-full bg-white h-0 overflow-hidden absolute top-20 transition-all  }
+    .nav {@apply flex-col py-5   }
+    .navEl.toggle { @apply h-72 shadow-lg }
+}

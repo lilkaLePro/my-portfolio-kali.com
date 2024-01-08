@@ -16,7 +16,7 @@ export default {
       "bg-remp" : "var(--bg-remp)",
       "white-bg" : "var(--sous-text-inv)",
       "white"  : "#fff",
-      "bg-light" : "var(--sous-text)" 
+      "bg-light" : "var(--sous-text-inv)" 
     },
     fontFamily : {
       Comfortaa : "'Comfortaa', sans-serif",
@@ -34,6 +34,11 @@ export default {
         xm : "30px",
         md : "75px"
       },
+      screens :{
+        'sm' : '640px',
+        'md' : '768px',
+        'lg' : '1024px'
+      }
       
      
     },
