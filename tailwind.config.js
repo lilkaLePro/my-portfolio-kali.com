@@ -6,14 +6,14 @@ export default {
       "color-base" : "var(--text-base)",
       "sous-text" : "var(--sous-text)",
       "sous-text-inv" : "var(--sous-text-inv)",
-      "light-green" : "var(--bg-remp)",
+      "remp" : "var(--col-remp)",
       "button-hover" : "var(--button-hover)",
       "button-sous" : "var(--button-sous)"
     },
     backgroundColor : {
       "color-button" : "var(--color-button)",
-      "hover-button" : "var(--text-base)",
-      "bg-remp" : "var(--bg-remp)",
+      "hover-button" : "var(--button-hover)",
+      "bg-remp" : "var(--col-remp)",
       "white-bg" : "var(--sous-text-inv)",
       "white"  : "#fff",
       "bg-light" : "var(--sous-text-inv)" 

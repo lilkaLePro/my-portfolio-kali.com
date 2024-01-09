@@ -7,12 +7,12 @@
 @layer base {
     :root {
         /* LE THEME EST VERT */
-        --text-base : #111802;
-        --sous-text : #2f4306;
-        --sous-text-inv : #ebfacc;
-        --bg-remp : #613DC9 ;
-        --color-button : #243403;
-        --button-hover : #374f05;
+        --text-base : #fff3d3;
+        --sous-text : #E3F9F6 ;
+        --sous-text-inv : #29384D;
+        --col-remp : #465262 ;
+        --color-button : var(--text-base) ;
+        --button-hover : #FFFFAA ;
         --button-sous : #ef4444;
     }
     .theme-dark{
@@ -23,13 +23,16 @@
 
 *{
     font-family : Ubuntu;
-    background : darkWhite ;
+    
 }
-
+body {
+    background :  #29384D;
+}
+li{@apply text-sous-text-inv }
 .navlink{@apply flex flex-row justify-center items-center gap-2 font-extrabold text-center border-b-0 transition-all}
         /* a propos de moi page */
 .projet {@apply max-w-2xl h-80}
-.active { @apply text-light-green border-b-4 }
+.active { @apply text-remp border-b-4 }
 
 
 .Pprofil {animation : 40s disc linear infinite ;}

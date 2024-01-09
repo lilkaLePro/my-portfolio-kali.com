@@ -1,6 +1,7 @@
 {
-  "name": "My-portfolio",
+  "name": "My-portfolio-kali.com",
   "private": true,
+  "homepage" : "https://github.com/lilkaLePro/my-portfolio-kali.com.git",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,6 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+   
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

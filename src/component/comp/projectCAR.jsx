@@ -13,7 +13,7 @@ export default function ProjectsCard({imgsrc ,imgalt , title , desc , icon }) {
             </div>
             <div className="flex flex-col items-center justify-center">
                 <h1 className="text-center text-color-base text-xd">{title}</h1>
-                <p className="font-Comfortaa max-w-2xl p-5 max-sm:p-1 text-xm max-lg:max-w-md  ">{desc} </p>
+                <p className="text-sous-text font-Comfortaa max-w-2xl p-5 max-sm:p-1 text-xm max-lg:max-w-md  ">{desc} </p>
                 <div className="flex flex-row gap-3 w-full">
                     <LightButton iconb={<FaGithub/>} value="github" icon={icon} />
                     <Button iconf={<FaLongArrowAltRight/>} value="visiter"/>

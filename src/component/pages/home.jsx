@@ -13,14 +13,12 @@ export default function Home(){
     return <div className="flex flex-col justify-center items-center w-full ">
     <div>
 
-      <div className="max-w-6xl max-sm:w-full max-sm:flex-col px-5 max-sm:px-0 flex mt-24 max-sm:items-center">
-      <div className=" p-10 px-20 max-sm:p-2 max-sm:px-3 max-md:text-center">
-        <h1 className="font-Comfortaa text-sous-text">Dévellopeur</h1>
-        <h1 className="max-md:text-lg max-sm:px-10 max-sm:text-xd text-color-base text-xl font-extrabold leading-md ">Front-End  <span>React</span> / 
-        Web <span>Disigner</span>  </h1>
-        <p className="mt-5 max-sm:text-xs max-sm:px-20 text-sous-text font-Comfortaa ">
-        Salut a vous, moi c est <span className="font-bold">Kaly Diallo</span> é passionné du code é et du graphisme é surtout animé par la creativité
-        , basé à Dakar, Sénégal 
+      <div className="md:max-w-6xl w-full max-sm:flex-col flex mt-24 max-sm:items-center">
+      <div className="max-md:text-center">
+        <h1 className="sm:pr-5 max-md:text-lg max-sm:text-lg text-color-base text-xl font-extrabold leading-md ">Front-End React & <br /> Web Designer </h1>
+        <p className="text-sous-text ">
+          <span>localisation : </span>
+          <span>Kaly diallo  </span>
         </p>
         <p className="text-sous-text w-full mt-10 flex flex-row gap-2 max-xm:m-0 max-lg:flex-col font-semibold items-center">Voulez vous me dire quelque chose ? 
           <Link to="#contact" id="contact"> <Button value={"me contacter"}><IoIosCall /> </Button>  </Link>
@@ -36,16 +34,16 @@ export default function Home(){
           <img src="/img/PP-kali.jpg"className="w-full h-full" alt="photo de profile" />
           </div>
         <div className="flex gap-10 ">
-          <div className=" cursor-pointer "><a href="https://github.com/lilkaLePro"  
-          className="w-5 h-5 hover:-translate-y-1 transition-all  rounded-full overflow-hidden "><FaGithub href="" className="w-full h-full" /> </a> github</div>
-          <div className=" cursor-pointer "><a 
-          href="https://linkedin.com/in/kaly-diallo-0087032a3" className="w-5 h-5 hover:-translate-y-1 transition-all overflow-hidden"><FaLinkedin href="https://linkedin.com/in/kaly-diallo-0087032a3" className="w-full h-full"/></a> linkedin</div>
-      </div>
+        <div className=" cursor-pointer "><a href="https://github.com/lilkaLePro"  
+          className="w-5 h-5 hover:-translate-y-1 transition-all  rounded-full overflow-hidden "><FaGithub className="w-full h-full" /> </a> github</div>
+        <div className="cursor-pointer"><a href="https://linkedin.com/in/kaly-diallo-0087032a3"
+        className="w-5 h-5 hover:-translate-y-1 transition-all  rounded-full overflow-hidden"><FaLinkedin className="w-full h-full"/> </a> linkedin</div>
+       </div>   
       </div>      
       </div>
 
       <div className="w-full mb-20 flex flex-col  items-center  justify-center py-5 px-40 ">
-        <h1 className="text-xd text-light-green font-extrabold text-center m-5 ">Mes competences</h1>
+        <h1 className="text-xd text-color-base font-extrabold text-center m-5 ">Mes competences</h1>
       <div className="w-full grid gap-10 grid-cols-3  max-md:grid max-md:grid-cols-2 max-sm:grid-cols-1 justify-center pt-10 ">
         <Card src={<FaCode className="w-full h-full text-light-green " />} title={"front-end"} list={
           front.map((items , index) =>(
@@ -67,7 +65,7 @@ export default function Home(){
       </div>
      
       <div className="mb-20 px-2 flex flex-col justify-center items-center" >
-          <h1 className="font-extrabold text- m-5 text-xd ">En savoir plus</h1>
+          <h1 className="font-extrabold text-color-base m-5 text-xd ">En savoir plus</h1>
            {/* my project description */}
       </div>
         <div id="contact">

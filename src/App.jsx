@@ -5,7 +5,7 @@ import PageError from "./component/pages/errorPage";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { GrProjects } from "react-icons/gr";
 import { useState } from "react";
-import Reseau from "./component/comp/reseaux";
+// import Reseau from "./component/comp/reseaux";
 
 
 const router = createBrowserRouter([
@@ -41,7 +41,7 @@ function Navbar(){
 
   return <div>
 
-    <header className=" bg-white w-full fixed h-20 items-center justify-around flex gap-10 z-40 max-sm:shadow-sm">
+    <header className=" w-full fixed h-20 items-center justify-around max-sm:justify-between flex z-40 max-sm:shadow-sm " >
       <div className="w-8 h-8 text-center font-bold flex justify-center items-center border rounded-full">Afer</div>
 
       <div className={`navEl ${showbar && 'toggle'}`}>
